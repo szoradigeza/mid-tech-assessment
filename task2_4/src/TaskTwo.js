@@ -3,7 +3,7 @@ import { Provider } from './provider';
 
 export default function TaskTwo() {
     useEffect(async () => {
-        const city = await Provider.findCity(51.5074, 0.1278);
+        const city = await Provider.findCity(0.1278, 51.5074);
         console.log(city);
         const weather = await Provider.getWeather(city);
         console.log(weather);
