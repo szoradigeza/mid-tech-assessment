@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import getProcessingPage from './getProcessingPage'
 
-export default function TaskFour() {
+function TaskFour() {
     useEffect( async() => {
         //Effect callbacks are synchronous
        const testProcessing = await getProcessingPage([{state: 'processing'}, {state: 'error', errorCode: 'INCORRECT_DETAILS'}])
@@ -13,3 +13,6 @@ export default function TaskFour() {
         </div>
     )
 }
+
+
+export default TaskFour;
